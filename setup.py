@@ -10,9 +10,7 @@ setup(name='10xTools',
       packages=['10xTools'],
       install_requires=[
           'h5py',
-          'time',
           'numpy',
-          'pandas',
-          'gc'
+          'pandas'
       ],
       zip_safe=False)
