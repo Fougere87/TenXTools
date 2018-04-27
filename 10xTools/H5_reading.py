@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 import h5py
 import time
 import numpy as np
