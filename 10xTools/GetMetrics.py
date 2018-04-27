@@ -42,14 +42,3 @@ def main(argv):
 
 if __name__ == "__main__":
    main(sys.argv[1:])
-
-
-
-with open("../TE16/cells_TE16_1.txt", "r") as cell_file :
-    cells = cell_file.readlines()
-
-cells_ok = [n[0:16:1] for n in cells]
-
-CellsNamesToInt(cells_ok)
-
-mol_info = read_10x_h5("../TE16/Raw_data/TE16_1/molecule_info.h5")
