@@ -7,7 +7,7 @@ setup(name='TenXTools',
       author='Chloe MAYERE',
       author_email='chloe.mayere@unige.ch',
       license='MIT',
-      packages=['10xTools'],
+      packages=['TenXTools'],
       install_requires=[
           'h5py',
           'numpy',
