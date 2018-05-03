@@ -31,7 +31,7 @@ def main(argv):
 
     cells_ok = [n[0:16:1] for n in cells]
 
-    mol_info = read_10x_h5(mol_info_file, CellsNamesToInt(cells_ok))
+    mol_info = TenXTools.read_10x_h5(mol_info_file, CellsNamesToInt(cells_ok))
 
     mol_info_aggr = mol_info_aggr = mol_info.groupby("bc").sum()
 
