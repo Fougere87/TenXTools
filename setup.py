@@ -1,4 +1,4 @@
-from setuptools import setup, find_packages
+from setuptools import setup
 
 setup(name='TenXTools',
       version='0.1',
@@ -7,8 +7,7 @@ setup(name='TenXTools',
       author='Chloe MAYERE',
       author_email='chloe.mayere@unige.ch',
       license='MIT',
-      packages=find_packages('TenXTools'),
-      package_dir =   {'':'TenXTools'},
+      packages=['TenXTools'],
       entry_points = {
         'console_scripts': ['GetMetrics=TenXTools.GetMetrics:main']},
       #scripts=['bin/GetMetrics'],
