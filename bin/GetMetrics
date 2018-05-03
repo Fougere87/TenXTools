@@ -1,5 +1,5 @@
 #!/usr/bin/python
-import TenXTools
+from TenXTools import *
 import sys, getopt
 
 def main(argv):
@@ -31,9 +31,9 @@ def main(argv):
 
     cells_ok = [n[0:16:1] for n in cells]
 
-    mol_info = TenXTools.read_10x_h5(mol_info_file, CellsNamesToInt(cells_ok))
+    mol_info = read_10x_h5(mol_info_file, CellsNamesToInt(cells_ok))
 
-    mol_info_aggr = mol_info_aggr = mol_info.groupby("bc").sum()
+    mol_info_aggr = mol_info.groupby("bc").sum()
 
     mol_info_aggr.index = convertBCs(mol_info_aggr.index)
 
