@@ -8,7 +8,9 @@ setup(name='TenXTools',
       author_email='chloe.mayere@unige.ch',
       license='MIT',
       packages=['TenXTools'],
-      scripts=['bin/GetMetrics'],
+      entry_points = {
+        'console_scripts': ['GetMetrics=TenXTools.GetMetrics:main'],
+      #scripts=['bin/GetMetrics'],
       install_requires=[
           'h5py',
           'numpy',
