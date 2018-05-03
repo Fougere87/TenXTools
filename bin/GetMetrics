@@ -1,5 +1,5 @@
 #!/usr/bin/python
-from TenXTools import *
+from H5_reading import *
 import sys, getopt
 
 def main(argv):
