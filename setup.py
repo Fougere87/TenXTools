@@ -9,7 +9,7 @@ setup(name='TenXTools',
       license='MIT',
       packages=['TenXTools'],
       entry_points = {
-        'console_scripts': ['GetMetrics=TenXTools.GetMetrics:main']},
+        'console_scripts': ['GetMetrics=TenXTools.GetMetrics:main(sys.argv[1:])']},
       #scripts=['bin/GetMetrics'],
       install_requires=[
           'h5py',
